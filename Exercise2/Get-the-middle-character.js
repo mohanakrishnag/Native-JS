@@ -1,7 +1,5 @@
 // Function to get the middle character of a string
 function getMiddle(s) {
-    if (s.length % 2) {
-        return s.substr(s.length / 2, 1);
-    }
-    return s.substr((s.length / 2) - 1, 2);
+    var middleIndex = s.length / 2;
+    return (s.length % 2) ? s.substr(middleIndex, 1) : s.substr(middleIndex - 1, 2);
 }
