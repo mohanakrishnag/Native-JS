@@ -1,7 +1,7 @@
 // Transportation on vacation
 function rentalCarCost(day) {
-    var rate = 40, cost = 0;
-    cost = day * rate;
+    var rate = 40;
+    var cost = day * rate;
     if (day >= 7) {
         cost = cost - 50;
     }
