@@ -1,10 +1,13 @@
 (function () {
     var loadElements = function () {
         var mainDiv = document.createElement("div");
-        var t = document.createTextNode("This is a paragraph.");
-        mainDiv.appendChild(t);
+        mainDiv.className = 'container';
+
+        var searchDiv = document.createElement("div");
+        mainDiv.appendChild(searchDiv);
+
         document.getElementById("YouTubeSearch").appendChild(mainDiv);
     };
 
-    window.onload = loadElements;
+    //window.onload = loadElements;
 })();

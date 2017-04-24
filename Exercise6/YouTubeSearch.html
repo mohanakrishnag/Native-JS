@@ -3,11 +3,24 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>YouTube Search</title>
-
-    <!--Need to move this code to seperate file-->
-    <script type="text/javascript" src="scripts/main.js" ></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script type="text/javascript" src="scripts/main.js"></script>
 </head>
 <body id="YouTubeSearch">
+    <div class="container-fluid">
+        <h2>Search YouTube Videos</h2>
+        <div id="custom-search-input">
+            <div class="input-group col-md-12">
+                <input type="text" class="search-query form-control" placeholder="Search" />
+                <span class="input-group-btn">
+                    <button class="btn btn-danger" type="button">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                </span>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
