@@ -10,4 +10,17 @@
     };
 
     //window.onload = loadElements;
-})();
+
+    window.onload = function () {
+        alert(searchModule.getVideos());
+    };
+
+
+
+})('YouTubeApp');
+
+
+
+
+
+
