@@ -18,19 +18,14 @@ var Cat = (function () {
         cats.push(this);
     }
 
-    //Added function to return averageWeight from the cats array
-    Array.prototype.awerageWeight = function (prop) {
-        var total = 0
-        for (var i = 0, _len = this.length; i < _len; i++) {
-            total += this[i][prop]
-        }
-        return this.length ? (total / this.length) : 0;
-    }
-
     Object.defineProperty(Cat, 'averageWeight', {
         get: function () {
+            var totlWeight = 0;
+            for (var i = 0; i < cats.length; i++) {
+                totlWeight += cats[i].weight;
+            }
             return function () {
-                return cats.awerageWeight('weight');
+                return totlWeight / cats.length;
             }
         }
     });
