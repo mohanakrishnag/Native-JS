@@ -5,7 +5,8 @@ function prefill(times, value) {
     }
     else {
         var array = [];
-        for (var i = 0; i < parseInt(times) ; i++) {
+        var numTimes = parseInt(times);
+        for (var i = 0; i < numTimes; i++) {
             array.push(value);
         }
         return array;
